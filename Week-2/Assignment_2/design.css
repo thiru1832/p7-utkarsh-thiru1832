@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Lato;
+}
+
+
+.hi{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%)
+}
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main :nth-child(1){
+    background-color: blue;
+    position: relative;
+    height: 50%;
+    width: 50%;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-property: all;
+
+}
+.main :nth-child(2){
+    background-color: rgb(255, 251, 0);
+    position: relative;
+    height: 50%;
+    width: 50%;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-property: all;
+}
+.main :nth-child(3){
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    height: 50%;
+    width: 50%;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-property: all;
+}
+.main :nth-child(4){
+    background-color: rgb(60, 255, 0);
+    position: relative;
+    height: 50%;
+    width: 50%;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-property: all;
+}
+
+.main:hover > #red{
+    transform: translate(-100%, 0%) rotate(-90deg)  
+}
+
+.main:hover > #green{
+    transform: translate(100%,0%) rotate(90deg)  
+}
+.main:hover > #yellow{
+    transform: translate(-100%, 0%) rotate(90deg)  
+}
+.main:hover > #blue{
+    transform: translate(100%, 0%) rotate(-90deg)  
+}
