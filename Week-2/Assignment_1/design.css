@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Lato;
+}
+
+#topic{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main{
+    display:flex;
+    flex-direction: row;
+    margin-top: 50px;
+    flex: 1;
+}
+
+
+.one{
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.two{
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main {
+      flex-direction:column;
+    }
+  }
+
+.input-form{
+    width: 100%;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-label{
+    margin:20px;
+}
